@@ -8,7 +8,7 @@ AppSec : Implementación de herramientas SAST, gestión y remediación de vulner
 
 Infraestructura Cloud: Experiencia sólida en AWS, gestión de contenedores con Docker y automatización de pipelines en GitHub Actions y GitLab CI con despliegues en Argo CD.
 
-Desarrollo de Sistemas: Background experto en TypeScript (NodeJS/NestJS), PHP (Laravel) y lenguajes de alto rendimiento como Go, Rust y C++.
+Desarrollo de Sistemas: Background experto en **TypeScript (NestJS)**, PHP (Laravel) y lenguajes de alto rendimiento como Go, Rust y C++.
 
 Arquitectura de Datos: Gestión y aseguramiento de bases de datos PostgreSQL y MongoDB.
 
