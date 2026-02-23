@@ -1,7 +1,7 @@
-Contact: mailto:security@axelcerkvenih.com
+Contact: mailto:cerkvenihaxel@proton.me
 Expires: 2027-02-23T00:00:00.000Z
 Preferred-Languages: en, es
-Canonical: https://axelcerkvenih.com/.well-known/security.txt
+Canonical: https://axlcrkv.dev.ar/.well-known/security.txt
 
 # Security Policy
 # 

@@ -1,0 +1,1 @@
+import{e as c,a as r}from"./es.EQZ27YO3.js";const g={en:r,es:c};function a(){const o=localStorage.getItem("lang")||"en",s=g[o];document.querySelectorAll("[data-i18n]").forEach(n=>{const e=n.getAttribute("data-i18n");if(e){const i=e.split(".");let t=s;for(const l of i)t=t[l];t&&(n.textContent=t)}})}a();window.addEventListener("languageChange",a);
