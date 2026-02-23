@@ -65,7 +65,7 @@ My daily tasks involved designing and developing web applications for the depart
 
 - **Security:** Snyk (SAST/SCA), OWASP Top 10, Cloud Hardening, IAM, Secret Management.
 - **Cloud & DevSecOps:** AWS, GitLab CI/CD, Docker, GitHub Actions, Liquibase.
-- **Languages:** Go, Rust, Node.js (NestJS), Python, C/C++, PHP (Laravel).
+- **Languages:** Go, Rust, Typescript (NestJS), Python, C/C++, PHP (Laravel).
 - **Observability:** Grafana, Dynatrace, CloudWatch.
 - **Databases:** PostgreSQL, MySQL, MongoDB.
 - **Frontend/Mobile:** React Native, Flutter, React.
