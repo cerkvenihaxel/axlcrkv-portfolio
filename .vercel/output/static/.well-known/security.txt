@@ -1,0 +1,20 @@
+Contact: mailto:security@axelcerkvenih.com
+Expires: 2027-02-23T00:00:00.000Z
+Preferred-Languages: en, es
+Canonical: https://axelcerkvenih.com/.well-known/security.txt
+
+# Security Policy
+# 
+# This portfolio demonstrates security-first development practices.
+# If you discover a security vulnerability, please report it responsibly.
+#
+# Response Time: Within 48 hours
+# 
+# Security Headers Recommended:
+# - Content-Security-Policy
+# - X-Frame-Options: DENY
+# - X-Content-Type-Options: nosniff
+# - Strict-Transport-Security
+#
+# Built with security in mind by Axel Cerkvenih
+# Application Security Engineer @ Personal Pay

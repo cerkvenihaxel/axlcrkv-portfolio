@@ -1,0 +1,97 @@
+---
+const milestones = [
+  {
+    period: "Dec 2025 - Present",
+    title: "Application Security Engineer @ Personal Pay",
+    description: "Leading Snyk (SCA/SAST) implementation within GitLab CI/CD, reducing critical vulnerabilities across the organization. Hardening AWS environments (IAM, Secrets Manager, S3) and building custom security automation tools using Go and Rust."
+  },
+  {
+    period: "Jan 2025 - Dec 2025",
+    title: "Backend Developer @ Personal Pay",
+    description: "Developed scalable microservices for the Personal Identity team using NestJS, PostgreSQL, and MongoDB. Designed and maintained cloud solutions on AWS (API Gateway, SQS, CloudFront)."
+  },
+  {
+    period: "Aug 2024 - Dec 2024",
+    title: "Backend Developer @ Agripay",
+    description: "Managed backend microservices using PHP and Laravel. Implemented continuous integration pipelines with GitHub Actions for automated testing and deployment. Containerization with Docker."
+  },
+  {
+    period: "Aug 2023 - Mar 2024",
+    title: "Full Stack Developer @ Innovus Software",
+    description: "Built and maintained mobile and web applications, including deployment to App Store and Play Store. Managed server deployment and cloud services like AWS and Digital Ocean."
+  },
+  {
+    period: "Apr 2022 - Aug 2023",
+    title: "Full Stack Developer @ Global Médica S.A",
+    description: "Led design, development, and maintenance of a CRM system using Laravel with over 5000 users for a chain of pharmacies and orthopedic facilities. Served as team leader."
+  },
+  {
+    period: "Jan 2020 - Apr 2022",
+    title: "Full Stack Developer Jr @ La Rioja's Municipality",
+    description: "Designed and developed web applications for municipal departments using Laravel and WordPress. Gained experience in deployment, maintenance, and API implementation."
+  }
+];
+---
+
+<section class="py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+      <span data-i18n="timeline.title">Impact</span> <span class="text-[#00ff88]" data-i18n="timeline.titleAccent">Timeline</span>
+    </h2>
+    <p class="text-[#a3a3a3] text-center mb-12" data-i18n="timeline.subtitle">
+      Key milestones in application security and software engineering
+    </p>
+    
+    <div class="relative">
+      <!-- Timeline line -->
+      <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-[#1a1a1a] transform md:-translate-x-1/2"></div>
+      
+      <div class="space-y-12">
+        {milestones.map((milestone, idx) => (
+          <div class={`relative flex items-start gap-8 ${idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+            <!-- Timeline dot -->
+            <div class="absolute left-0 md:left-1/2 w-4 h-4 bg-[#00ff88] rounded-full border-4 border-[#0a0a0a] transform md:-translate-x-1/2 z-10"></div>
+            
+            <!-- Content -->
+            <div class={`flex-1 ml-8 md:ml-0 ${idx % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
+              <div class="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 hover:border-[#00ff88] transition-colors">
+                <div class="text-[#00ff88] text-sm font-mono mb-2">{milestone.period}</div>
+                <h3 class="text-xl font-semibold mb-3 text-[#e5e5e5]">{milestone.title}</h3>
+                <p class="text-[#a3a3a3] text-sm leading-relaxed">{milestone.description}</p>
+              </div>
+            </div>
+            
+            <div class="flex-1 hidden md:block"></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import en from '../i18n/en.json';
+  import es from '../i18n/es.json';
+
+  const translations = { en, es };
+
+  function updateTranslations() {
+    const lang = (localStorage.getItem('lang') || 'en') as 'en' | 'es';
+    const t = translations[lang];
+    
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        const keys = key.split('.');
+        let value: any = t;
+        for (const k of keys) {
+          value = value[k];
+        }
+        if (value) el.textContent = value;
+      }
+    });
+  }
+
+  updateTranslations();
+  window.addEventListener('languageChange', updateTranslations);
+</script>

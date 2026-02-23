@@ -1,0 +1,1 @@
+import{r as s}from"./index.DiEladB3.js";import{e as r,a as g}from"./es.Cmeu6CBV.js";const i={en:g,es:r};function c(){const[e,n]=s.useState("en");return s.useEffect(()=>{const a=localStorage.getItem("lang");a&&n(a);const t=o=>{n(o.detail)};return window.addEventListener("languageChange",t),()=>window.removeEventListener("languageChange",t)},[]),{t:i[e],lang:e}}export{c as u};

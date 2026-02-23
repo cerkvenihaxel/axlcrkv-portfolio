@@ -1,0 +1,100 @@
+---
+const services = [
+  {
+    title: "Custom Software Development",
+    description: "Full-stack development of web and mobile applications tailored to your business needs. From MVP to production-ready solutions.",
+    icon: "code"
+  },
+  {
+    title: "Server Monitoring & Infrastructure",
+    description: "24/7 server monitoring, performance optimization, and cloud infrastructure management. Keep your systems running smoothly.",
+    icon: "server"
+  },
+  {
+    title: "Web & Mobile App Security Audits",
+    description: "Comprehensive security assessments following OWASP Top 10. Identify vulnerabilities before attackers do.",
+    icon: "shield"
+  },
+  {
+    title: "Healthcare Management Software",
+    description: "Specialized medical practice management systems with HIPAA compliance. Streamline your healthcare operations.",
+    icon: "medical",
+    link: "https://vadahealth-landing.vercel.app/",
+    linkText: "Visit VadaHealth"
+  }
+];
+---
+
+<section class="py-20 px-6 bg-[#0a0a0a]">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+      Freelance <span class="text-[#00ff88]">Services</span>
+    </h2>
+    <p class="text-[#a3a3a3] text-center mb-12 max-w-2xl mx-auto">
+      Professional software development and security services for businesses of all sizes
+    </p>
+    
+    <div class="grid md:grid-cols-2 gap-6">
+      {services.map((service) => (
+        <div class="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 hover:border-[#00ff88] transition-all duration-300 group">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-[#00ff88]/10 rounded-lg flex items-center justify-center group-hover:bg-[#00ff88]/20 transition-colors">
+              {service.icon === "code" && (
+                <svg class="w-6 h-6 text-[#00ff88]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                </svg>
+              )}
+              {service.icon === "server" && (
+                <svg class="w-6 h-6 text-[#00ff88]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                </svg>
+              )}
+              {service.icon === "shield" && (
+                <svg class="w-6 h-6 text-[#00ff88]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+              )}
+              {service.icon === "medical" && (
+                <svg class="w-6 h-6 text-[#00ff88]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                </svg>
+              )}
+            </div>
+            
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2 text-[#e5e5e5] group-hover:text-[#00ff88] transition-colors">
+                {service.title}
+              </h3>
+              <p class="text-[#a3a3a3] text-sm mb-4 leading-relaxed">
+                {service.description}
+              </p>
+              
+              {service.link && (
+                <a 
+                  href={service.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 text-[#00ff88] text-sm font-medium hover:underline"
+                >
+                  {service.linkText}
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    <div class="text-center mt-12">
+      <a 
+        href="#contact" 
+        class="inline-block px-8 py-3 bg-[#00ff88] text-[#0a0a0a] rounded-lg font-medium hover:bg-[#00cc6a] transition-colors"
+      >
+        Hire Me for Your Project
+      </a>
+    </div>
+  </div>
+</section>

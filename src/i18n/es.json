@@ -1,0 +1,119 @@
+{
+  "hero": {
+    "title": "Axel Cerkvenih",
+    "role": "Ingeniero de Seguridad de Aplicaciones",
+    "company": "Personal Pay",
+    "subtitle": "Estudiante de Ingeniería Electrónica | Mentalidad Security-First",
+    "description": "Construyendo soluciones digitales resilientes integrando la seguridad en el corazón del ciclo de desarrollo. Especializado en DevSecOps, hardening de cloud y arquitectura de software seguro.",
+    "cta": "Contactar"
+  },
+  "about": {
+    "title": "Sobre",
+    "titleAccent": "Mí",
+    "intro": "Soy un ingeniero enfocado en seguridad basado en Argentina 🇦🇷, actualmente en transición desde una sólida experiencia en desarrollo Full-Stack hacia Seguridad de Aplicaciones (AppSec).",
+    "education": "Como estudiante de Ingeniería Electrónica en la Universidad Tecnológica Nacional (UTN), aporto una perspectiva única \"bajo el capó\" a la ciberseguridad—entendiendo no solo el código, sino el hardware y los protocolos que lo impulsan.",
+    "mindset": "Soy proactivo, colaborativo e impulsado por una mentalidad security-first. Prospero en entornos DevOps donde puedo automatizar la gestión de vulnerabilidades, endurecer infraestructuras cloud y promover mejores prácticas como el OWASP Top 10.",
+    "yearsExp": "Años de Experiencia",
+    "projectsCompleted": "Proyectos Completados",
+    "cta": "Trabajemos Juntos",
+    "downloadCV": "Descargar CV"
+  },
+  "services": {
+    "title": "Servicios",
+    "titleAccent": "Freelance",
+    "subtitle": "Desarrollo de software profesional y servicios de seguridad para empresas de todos los tamaños",
+    "cta": "Contrátame para tu Proyecto",
+    "items": [
+      {
+        "title": "Desarrollo de Software a Medida",
+        "description": "Desarrollo full-stack de aplicaciones web y móviles adaptadas a las necesidades de tu negocio. Desde MVP hasta soluciones listas para producción."
+      },
+      {
+        "title": "Monitorización de Servidores e Infraestructura",
+        "description": "Monitorización 24/7 de servidores, optimización de rendimiento y gestión de infraestructura cloud. Mantén tus sistemas funcionando sin problemas."
+      },
+      {
+        "title": "Auditorías de Seguridad Web y Mobile",
+        "description": "Evaluaciones de seguridad exhaustivas siguiendo OWASP Top 10. Identifica vulnerabilidades antes que los atacantes."
+      },
+      {
+        "title": "Software de Gestión Médica",
+        "description": "Sistemas especializados de gestión de consultorios médicos con cumplimiento HIPAA. Optimiza tus operaciones de salud.",
+        "linkText": "Visitar VadaHealth"
+      }
+    ]
+  },
+  "techStack": {
+    "title": "Monitor de",
+    "titleAccent": "Tecnologías",
+    "status": "todos_los_sistemas_operativos"
+  },
+  "timeline": {
+    "title": "Línea de",
+    "titleAccent": "Tiempo",
+    "subtitle": "Hitos clave en seguridad de aplicaciones e ingeniería de software",
+    "milestones": [
+      {
+        "period": "Dic 2025 - Presente",
+        "title": "Ingeniero de Seguridad de Aplicaciones @ Personal Pay",
+        "description": "Liderando la implementación de Snyk (SCA/SAST) dentro de GitLab CI/CD, reduciendo vulnerabilidades críticas en toda la organización. Endureciendo entornos AWS (IAM, Secrets Manager, S3) y construyendo herramientas personalizadas de automatización de seguridad usando Go y Rust."
+      },
+      {
+        "period": "Ene 2025 - Dic 2025",
+        "title": "Desarrollador Backend @ Personal Pay",
+        "description": "Desarrollé microservicios escalables para el equipo de Personal Identity usando NestJS, PostgreSQL y MongoDB. Diseñé y mantuve soluciones cloud en AWS (API Gateway, SQS, CloudFront)."
+      },
+      {
+        "period": "Ago 2024 - Dic 2024",
+        "title": "Desarrollador Backend @ Agripay",
+        "description": "Gestioné microservicios backend usando PHP y Laravel. Implementé pipelines de integración continua con GitHub Actions para testing y deployment automatizado. Containerización con Docker."
+      },
+      {
+        "period": "Ago 2023 - Mar 2024",
+        "title": "Desarrollador Full Stack @ Innovus Software",
+        "description": "Construí y mantuve aplicaciones móviles y web, incluyendo deployment a App Store y Play Store. Gestioné deployment de servidores y servicios cloud como AWS y Digital Ocean."
+      },
+      {
+        "period": "Abr 2022 - Ago 2023",
+        "title": "Desarrollador Full Stack @ Global Médica S.A",
+        "description": "Lideré el diseño, desarrollo y mantenimiento de un sistema CRM usando Laravel con más de 5000 usuarios para una cadena de farmacias y ortopedias. Serví como líder de equipo."
+      },
+      {
+        "period": "Ene 2020 - Abr 2022",
+        "title": "Desarrollador Full Stack Jr @ Municipalidad de La Rioja",
+        "description": "Diseñé y desarrollé aplicaciones web para departamentos municipales usando Laravel y WordPress. Gané experiencia en deployment, mantenimiento e implementación de APIs."
+      }
+    ]
+  },
+  "github": {
+    "title": "Mira Mi",
+    "titleAccent": "Código",
+    "subtitle": "Explora mis proyectos open-source y contribuciones en GitHub",
+    "bio": "Ingeniero de Seguridad de Aplicaciones | Construyendo software seguro",
+    "repositories": "Repositorios",
+    "years": "Años Programando",
+    "contributions": "Contribuciones",
+    "languages": "Go, Rust, TypeScript, Python, PHP",
+    "cta": "Ver Perfil de GitHub"
+  },
+  "contact": {
+    "title": "Ponte en",
+    "titleAccent": "Contacto",
+    "subtitle": "¿Interesado en seguridad de aplicaciones, DevSecOps o arquitectura de software seguro?",
+    "form": {
+      "title": "Envíame un mensaje",
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    },
+    "quick": {
+      "title": "Contacto Rápido",
+      "whatsapp": "Contactar por WhatsApp"
+    },
+    "connect": {
+      "title": "Conectar"
+    },
+    "footer": "Construido con seguridad en mente."
+  }
+}

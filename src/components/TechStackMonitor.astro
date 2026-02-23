@@ -1,0 +1,74 @@
+---
+import { parseTechnologies } from '../lib/data';
+
+const technologies = parseTechnologies();
+---
+
+<section class="py-20 px-6 bg-[#0a0a0a]">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+      <span data-i18n="techStack.title">Tech Stack</span> <span class="text-[#00ff88]" data-i18n="techStack.titleAccent">Monitor</span>
+    </h2>
+    
+    <div class="bg-[#111111] border border-[#1a1a1a] rounded-lg p-8 font-mono">
+      <div class="flex items-center gap-2 mb-6 pb-4 border-b border-[#1a1a1a]">
+        <div class="flex gap-2">
+          <div class="w-3 h-3 rounded-full bg-[#ff4444]"></div>
+          <div class="w-3 h-3 rounded-full bg-[#ffaa00]"></div>
+          <div class="w-3 h-3 rounded-full bg-[#00ff88]"></div>
+        </div>
+        <span class="text-[#a3a3a3] text-sm ml-4">~/tech-stack</span>
+      </div>
+      
+      <div class="space-y-6">
+        {technologies.map((tech: any) => (
+          <div>
+            <div class="text-[#00ff88] mb-3 flex items-center gap-2">
+              <span class="inline-block w-2 h-2 rounded-full bg-[#00ff88] animate-pulse"></span>
+              <span class="font-semibold">{tech.category}</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 ml-4">
+              {tech.items.map((item: string) => (
+                <div class="text-[#a3a3a3] text-sm flex items-center gap-2">
+                  <span class="text-[#00ff88]">▸</span>
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      <div class="mt-6 pt-4 border-t border-[#1a1a1a] text-[#a3a3a3] text-sm">
+        <span class="text-[#00ff88]">$</span> status: <span data-i18n="techStack.status">all_systems_operational</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import en from '../i18n/en.json';
+  import es from '../i18n/es.json';
+
+  const translations = { en, es };
+
+  function updateTranslations() {
+    const lang = (localStorage.getItem('lang') || 'en') as 'en' | 'es';
+    const t = translations[lang];
+    
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        const keys = key.split('.');
+        let value: any = t;
+        for (const k of keys) {
+          value = value[k];
+        }
+        if (value) el.textContent = value;
+      }
+    });
+  }
+
+  updateTranslations();
+  window.addEventListener('languageChange', updateTranslations);
+</script>
